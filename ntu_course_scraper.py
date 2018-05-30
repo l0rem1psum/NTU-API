@@ -226,7 +226,7 @@ if __name__ == '__main__':
         scrapeAndStoreCourseData(course)
 
     # Store data to course_category and programs tables for all programs under all categories.
-    for i in range(9):
+    for i in range(len(program_names)):
         for j in range(len(des[i])):
             progressMsg(des[i][j])
             try:
